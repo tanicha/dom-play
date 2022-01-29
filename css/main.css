@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville&display=swap');
 
 html {
-    background-color: #E8DFE0;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 0.95em;
+    background-color: #90c294;
+    font-family: 'Georgia', sans-serif;
+    font-size: 1.00em;
     line-height: 1.5em;
 }
 
@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-    font-family: 'Courgette', cursive;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-weight: normal;
     margin: auto;
     background: #fff;
@@ -23,7 +23,7 @@ h1 {
 }
 
 main.wrapper {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     overflow: auto;
 }
 

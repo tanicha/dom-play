@@ -7,82 +7,54 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/forms.css" />
+
+  <style>
+
+      /* div#play span {
+          background-color: yellow;
+      }
+      */
+
+  </style>
+
  </head>
  <body>
      <header>
-     <h1>Form Template</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+     <h1>DOM Play</h1>
      </header>
      
    <main class="wrapper">
-       <form method = "get" action = "" class="main-form">
-           <div>
-               <label for = "FirstName">First Name</label>:<br />
-                <input type = "text" name = "FirstName" id="FirstName" placeholder = "First Name" required = "required" autofocus />
-            </div>
-            <div>
-                <label for = "LastName">Last Name</label>:<br />
-                 <input type = "text" name = "LastName" id="LastName" placeholder = "Last Name" required = "required" />
-             </div>
-             <div>
-                <label for = "Email">Email</label>:<br />
-                 <input type = "email" name = "Email" id="Email" placeholder = "Email" required = "required" />
-             </div>
-             <div>
-                <label for = "Address">Address</label>:<br />
-                 <input type = "text" name = "Address" id="Address" placeholder = "Please put your street address here" required = "required" />
-             </div>
-             <div>
-                 <label for = "State">State</label>:<br />
-                 <select name="State" id="State" required = "required">
-                    <option value="">Please select your state</option>
-                    <option value="AK">Alaska</option>
-                    <option value="CA">California</option>
-                    <option value="OR">Oregon</option>
-                    <option value="WA">Washington</option>
-                 </select>
-             </div>
-             <div>
-                 <fieldset>
-                     <legend>Would You Like to Join Our Mailing List?</legend>
-                     <label><input type="radio" name="JoinMailingList" value="Yes" required = required /> Yes <label><br />
-                     <label><input type="radio" name="JoinMailingList" value="No" /> No <label>
-                 </fieldset>
-             </div>
-             <div>
-                <fieldset>
-                    <legend>What Are You Interested In?</legend>
-                    <label><input type="checkbox" name="InterestedIn" value="Website" /> Website <label><br />
-                    <label><input type="checkbox" name="InterestedIn" value="OnlineCalendar" /> Online Calendar <label><br />
-                    <label><input type="checkbox" name="InterestedIn" value="ContactForm" /> Contact Form <label><br />
-                        <label><input type="checkbox" name="InterestedIn" value="Lollipops" /> Complimentary Lollipops <label>
-                </fieldset>
-            </div>
-            <div>
-                <label for = "Address">Comments</label>:<br />
-                <textarea name="Comments" placeholder="Your opinion is important to us" cols="36" rows="4" ></textarea>
-             </div>
-            <div> <input type = "submit" value = "Submit" /></div>
-       </form>
-
-     <footer>
-        <small>&copy; 2020-<span id="copyright">2022</span> by Tani Cha,
+    <p>Uses JavaScript data attributes and a NodeList to highlight actors in a play by clicking on the name of the actors. (click on a name!)</p>
+    <br>
+    <h2><bold>Coffee Talk:</bold></h2>
+    <div id="play">
+        <p><span data-actor="Freddy"> Freddy: Coffee, anyone?  A buddy of mine gets it sent to him from Cuba and I must say that the coffee beans from there are impeccable.  Such a smooth taste.  Would you gentlemen like a cup of Cuba?</span></p>
+        <p><span data-actor="Tobey"> Tobey: No thanks.</span></p>
+        <p><span data-actor="Freddy"> Freddy: Don’t be rude.  Introduce yourself first before answering me…this way I know the proper way to address you.</span></p>
+        <p><span data-actor="Tobey"> Tobey: Tobey.</span></p>
+        <p><span data-actor="Freddy"> Freddy: No coffee, Tobey?</span></p>
+        <p><span data-actor="Tobey"> Tobey: No, thank you.</span></p>
+        <p><span data-actor="John"> John: What’s your name?</span></p>
+        <p><span data-actor="Freddy"> Freddy: My name? Excuse me, you can call me Freddy, Freddy Ferrara…</span></p>
+        <p><span data-actor="John"> John: I’m John.</span></p>
+        <p><span data-actor="Freddy"> Freddy: Nice to me you, Johnny Boy. Coffee?</span></p>
+        <p><span data-actor="John"> John: Sure.</span></p>
+        <p><span data-actor="Tobey"> Tobey: Actually, did you have any hazelnut coffee?</span></p>
+        <p><span data-actor="Freddy"> Freddy: Yes, I do. Wait here...</span></p>
+        <p><span data-actor="John"> John: Thank you.</span></p>
+        <p><span data-actor="Tobey"> Tobey: Yeah, thank you so much!</span></p>
+    </div>
+    <footer>
+        <small>&copy; 2022 by 
+        Tani Cha,
         All Rights Reserved ~
         <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
         <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
         </small>
     </footer>
-  </main>
-  <script src="js/main.js">
-      
-      	//https://tinyurl.com/dynamic-html-checker
-		document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
-		 
-        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
-  </script>
- </body>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/dom-play.js"></script>
+</body>
 </html>
